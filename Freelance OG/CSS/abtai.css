@@ -1,0 +1,169 @@
+.abt-ai-body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+.text-section {
+    max-width: 50%;
+    animation: slideInLeft 1s ease-in-out;
+}
+.text-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+.text-section h1 span {
+    color: #3b82f6;
+}
+.text-section h1 span:last-child {
+    color: #a855f7;
+}
+.text-section p {
+    font-size: 18px;
+    color: #6b7280;
+    margin: 20px 0;
+}
+.text-section .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3b82f6;
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.text-section .cta-button:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+.analytics-section {
+    position: relative;
+    width: 50%;
+    animation: slideInRight 1s ease-in-out;
+}
+.analytics-section .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.analytics-section .stats .stat {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.analytics-section .stats .stat:hover {
+    transform: translateY(-10px);
+}
+.analytics-section .stats .stat i {
+    font-size: 24px;
+    color: #3b82f6;
+}
+.analytics-section .stats .stat h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.analytics-section .stats .stat p {
+    font-size: 16px;
+    color: #6b7280;
+}
+.analytics-section .chart {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.analytics-section .chart img {
+    width: 100%;
+    border-radius: 10px;
+}
+.analytics-section .filter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.analytics-section .filter .filter-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.analytics-section .filter .filter-item i {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.analytics-section .filter .filter-item span {
+    font-size: 16px;
+    font-weight: 600;
+}
+.analytics-section .filter .filter-item.active span {
+    color: #3b82f6;
+}
+.analytics-section .filter .filter-item.paused span {
+    color: #f59e0b;
+}
+.analytics-section .filter .filter-item.completed span {
+    color: #10b981;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .text-section, .analytics-section {
+        max-width: 100%;
+        width: 100%;
+    }
+    .text-section {
+        margin-bottom: 20px;
+    }
+}

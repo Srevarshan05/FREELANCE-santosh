@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Us What You Need Done</title>
+    <link rel="stylesheet" href="/CSS/hire.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side (60%) -->
+        <div class="left-side">
+            <img src="/Skilink logo1.png" alt="Logo" class="logo">
+            <h1>Tell us what you need done?</h1>
+            
+            <form id="project-form">
+                <label for="project-name">Project Name</label>
+                <input type="text" id="project-name" name="project-name" placeholder="Enter project name">
+
+                <div class="description-container">
+                    <label for="project-description">Project Description</label>
+                    <button type="button" id="clear-btn">Clear</button>
+                </div>
+                <textarea id="project-description" name="project-description" placeholder="Describe your project"></textarea>
+
+                <label for="upload-image">Upload an Image (Optional)</label>
+                <input type="file" id="upload-image" name="upload-image" accept="image/*">
+
+                <div class="project-purpose">
+                    <label>Project Purpose</label>
+                    <div class="button-group">
+                        <button type="button" class="purpose-btn">Educational</button>
+                        <button type="button" class="purpose-btn">Professional</button>
+                        <button type="button" class="purpose-btn">Entertainment</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="next-btn">Next</button>
+            </form>
+        </div>
+
+        <!-- Right Side (40%) -->
+        <div class="right-side">
+            <img src="/Designer (2).png" alt="Right Image" class="side-image">
+        </div>
+    </div>
+
+    <script src="/JS/hire.js"></script>
+</body>
+</html>

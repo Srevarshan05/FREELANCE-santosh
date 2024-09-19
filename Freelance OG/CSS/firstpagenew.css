@@ -1,0 +1,116 @@
+.first-body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar .menu a:hover{
+  color: #0cd7ff;
+  text-emphasis: none;
+}
+.navbar span{
+    font-weight: 650;
+}
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+.navbar .actions {
+    display: flex;
+    gap: 20px;
+}
+.navbar .actions a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navbar .actions .get-started {
+    background-color: #333;
+}
+.navbar .actions .see-demo {
+    background-color: #fff;
+    color: #000;
+}
+.hero {
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+.hero h1 span {
+    background: linear-gradient(90deg, #007bff, #6f42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.hero .cta {
+    margin: 30px 0;
+
+}
+.hero .cta a {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.hero .cta-1 {
+    margin: 68px 0;
+}
+
+.hero .cta-1 a {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 5px;
+    
+}
+.hero .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.hero .features .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero .features .feature i {
+    color: #007bff;
+}

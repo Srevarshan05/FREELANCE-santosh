@@ -1,0 +1,216 @@
+<html></html>
+<head>
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: #f8f9fa;
+            overflow: hidden;
+        }
+        .sidebar {
+            background-color: #6c5ce7;
+            color: white;
+            width: 30%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 40px;
+            animation: fadeInLeft 1s;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            animation: fadeInLeft 1s;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+        }
+        .sidebar ul li span {
+            font-size: 16px;
+        }
+        .sidebar ul li.active span {
+            font-weight: 600;
+        }
+        .sidebar .back-link {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            animation: fadeInLeft 1s;
+            cursor: pointer;
+        }
+        .sidebar .back-link i {
+            margin-right: 10px;
+        }
+        .main-content {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .main-content .content {
+            text-align: center;
+            animation: fadeInUp 1s;
+        }
+        .main-content .content i {
+            font-size: 40px;
+            color: #6c5ce7;
+            margin-bottom: 20px;
+        }
+        .main-content .content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .main-content .content p {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .main-content .content input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .main-content .content button {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .main-content .content button:hover {
+            background-color: #5a4dbf;
+        }
+        .main-content .content .pagination {
+            margin-top: 20px;
+        }
+        .main-content .content .pagination span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #ced4da;
+            border-radius: 50%;
+            margin: 0 4px;
+            transition: background-color 0.3s ease;
+        }
+        .main-content .content .pagination span.active {
+            background-color: #6c5ce7;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: 50%;
+                padding: 20px;
+            }
+            .main-content {
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                padding: 10px;
+            }
+            .sidebar h1 {
+                font-size: 20px;
+            }
+            .sidebar ul li span {
+                font-size: 14px;
+            }
+            .sidebar .back-link {
+                font-size: 12px;
+            }
+            .main-content .content h2 {
+                font-size: 20px;
+            }
+            .main-content .content p {
+                font-size: 12px;
+            }
+            .main-content .content input {
+                font-size: 12px;
+            }
+            .main-content .content button {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <h1>Untitled UI</h1>
+            <ul>
+                <li class="active"><i class="fas fa-check-circle"></i><span>Reset your password</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Enter confirmation code</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Create a new password</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Set up Face ID?</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Password reset!</span></li>
+            </ul>
+        </div>
+        <div onclick="document.location='Loginpage.html'" class="back-link">
+            <i class="fas fa-arrow-left"></i><span>Back to log in</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content">
+            <i class="fas fa-lock"></i>
+            <h2>Reset your password</h2>
+            <p>Forgot your password? Please enter your email and we'll send you a 4-digit code.</p>
+            <input type="email" placeholder="Enter your email">
+            <button onclick="document.location='forgetpass.html'">Get 4-digit code</button>
+            <div class="pagination">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

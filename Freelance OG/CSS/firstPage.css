@@ -1,0 +1,201 @@
+/* Global Settings */
+body {
+  background: black;
+  color: #141414;
+  font-family: 'Arial', sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e2e;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+.logo:hover{
+  color: #f39c12;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  justify-content: space-around;
+}
+
+.nav-links li a:hover {
+  color: #ff9d00;
+}
+
+.login-btn, #profile-btn {
+  background-color: #f39c12;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 250px;
+
+}
+
+.login-btn:hover, #profile-btn:hover {
+  background-color: #08caca;
+  transform: scale(1.05);
+}
+
+#profile-btn{
+  color: #000000;
+  background-color: #72dc35;
+  padding: 8px;
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+
+/* Main Hero Section */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem;
+ 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.content {
+  max-width: 40%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+p{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.buttons-container {
+  margin-top: 2rem;
+}
+
+.main-btn {
+  background-color: #283440;
+  color: white;
+  padding: 2rem 4rem;
+  border: none;
+  font-size: large;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.freelancer-img {
+  width: 250px;
+  height: 250px;
+  color: white;
+  filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+  animation: float 4s infinite ease-in-out;
+  margin-right: 20%
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Animated Section */
+.animated-section {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.modal-content {
+  text-align: center;
+}
+.sub-form{  
+  padding: 11px;
+  color: #141414;
+  background-color: #e28800;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sub-form:hover{
+   background-color: #08caca;
+   animation: forwards 0.3s;
+}
+.ip-box{
+  margin-right: 1rem 0;
+}
+input, select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 1rem 0;
+}
+
+/* Profile Card */
+#profile-card {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 10%;
+  right: 2%;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it appears above other elements */
+}

@@ -1,0 +1,129 @@
+.second-body{
+  font-family: 'poppins', sans-serif;
+
+  margin: 0px;
+  padding: 0px; /* Ensure body has no margin/padding */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  margin: 10px 0;
+  font-size: 2.5rem;
+  color: #2c3e50; /* Text color */
+}
+.card img{
+  border-radius: 18px;
+
+}
+
+.swiper {
+  width: 100%;
+  height: auto; /* Set height to auto for responsiveness */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card-slider .card{
+  border-radius: 16px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;  /* Padding adjusted */
+  transition: transform 0.3s ease;
+}
+.card h2{
+  color: white;
+}
+.title-card-partner{
+  margin-bottom: 75px;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.swiper-slide h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #34495e; /* Darker text for the partner names */
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2980b9; /* Color for navigation buttons */
+  width: 40px;
+  height: 40px;
+}
+.prev,.next{
+  padding: 15px;
+  color: aquamarine;
+  background-color: black;
+  box-shadow: inset;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin:30px;
+}
+.prev,.next:hover{
+  animation: ease-in .5s;
+}
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background: #fff; /* Color for pagination bullets */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .heading {
+      font-size: 2rem;
+  }
+
+  .swiper-slide h3 {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+      font-size: 1.8rem;
+  }
+
+  .swiper-slide h3 {
+      font-size: 1.2rem;
+  }
+
+  .swiper-slide {
+      padding: 5px;  /* Less padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 1.6rem;
+  }
+
+  .swiper-slide h3 {
+      font-size: 1rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+      width: 30px;  /* Smaller buttons */
+      height: 30px;
+  }
+}
+

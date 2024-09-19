@@ -1,0 +1,91 @@
+.fifth-body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+.text-content {
+    max-width: 50%;
+    animation: slideInLeft 1s ease-in-out;
+}
+.text-content h1 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+    background: linear-gradient(90deg, #A259FF, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-content p {
+    font-size: 1.2em;
+    margin: 0 0 20px 0;
+}
+.button3 {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #A259FF 0%, #3B82F6 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.button3:hover {
+    background: linear-gradient(90deg, #3B82F6 0%, #A259FF 100%);
+    transform: scale(1.05);
+}
+.image-content {
+    animation: slideInRight 1s ease-in-out;
+}
+.image-content img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+.note {
+    font-size: 0.9em;
+    color: #B0B0B0;
+    margin-top: 10px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-content, .image-content {
+        max-width: 100%;
+    }
+    .text-content {
+        margin-bottom: 20px;
+    }
+}

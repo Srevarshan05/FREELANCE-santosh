@@ -1,0 +1,186 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Page Styling */
+  body {
+    background: linear-gradient( #090909d7, #b2ebf2);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: popUp 1s ease-out;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Pop-up animation */
+  @keyframes popUp {
+    0% { transform: scale(0.5); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Logo */
+  .logo img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+  }
+  
+  /* Heading */
+  .form-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #006064;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Form Fields */
+  .certificate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #00796b;
+  }
+  
+  input, textarea, button {
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #004d40;
+    box-shadow: 0 0 10px rgba(0, 150, 136, 0.5);
+  }
+  
+  /* Submit Button */
+  button {
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Star Rating Styling */
+  .star-rating {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .star {
+    font-size: 30px;
+    color: #ccc;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"]:checked ~ .star {
+    color: #ffb400;
+  }
+  
+  /* Feedback Box */
+  textarea {
+    resize: none;
+  }
+  
+  /* Responsiveness */
+  
+  /* For large screens like desktops */
+  @media (min-width: 1024px) {
+    .container {
+      padding: 60px;
+      max-width: 800px;
+    }
+  
+    .form-heading {
+      font-size: 32px;
+    }
+  }
+  
+  /* For tablets and medium screens */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      padding: 40px;
+      max-width: 700px;
+    }
+  
+    .form-heading {
+      font-size: 28px;
+    }
+  
+    input, textarea, button {
+      font-size: 18px;
+    }
+  
+    .star {
+      font-size: 28px;
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .logo img {
+      width: 60px;
+    }
+  
+    .form-heading {
+      font-size: 22px;
+    }
+  
+    input, textarea, button {
+      font-size: 16px;
+    }
+  
+    .star {
+      font-size: 24px;
+    }
+  }
+  

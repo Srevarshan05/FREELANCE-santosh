@@ -1,0 +1,288 @@
+<html></html>
+ <head>
+  <title>
+   Pela Design - Get Started
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #E0E7FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .left-panel, .right-panel {
+            padding: 40px;
+        }
+        .left-panel {
+            width: 50%;
+            background-color: white;
+            animation: slideInLeft 1s ease-in-out;
+        }
+        .right-panel {
+            width: 50%;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(146,0,255,1) 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation: slideInRight 1s ease-in-out;
+        }
+        .right-panel img {
+            width: 100%;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .get-started {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sign-in {
+            color: #6B7280;
+            margin-bottom: 30px;
+        }
+        .sign-in a {
+            color: #3B82F6;
+            text-decoration: none;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #6B7280;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #D1D5DB;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group input::placeholder {
+            color: #9CA3AF;
+        }
+        .form-group .fa {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9CA3AF;
+        }
+        .form-group.country {
+            position: relative;
+        }
+        .form-group.country img {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+        }
+        .form-group.country select {
+            width: 100%;
+            padding: 10px;
+            padding-left: 40px;
+            border: 1px solid #D1D5DB;
+            border-radius: 5px;
+            font-size: 16px;
+            appearance: none;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEuNDEgMS4wN0w4IDcuNjdsNi41OS02LjZMMTQuNTkgMEw4IDYuNDFMMi4xNCAwTDEuNDEgMS4wN1oiIGZpbGw9IiM5Q0EzQUYiLz48L3N2Zz4=') no-repeat right 10px center;
+            background-size: 12px;
+        }
+        .sign-up-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #3B82F6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .sign-up-btn:hover {
+            background-color: #2563EB;
+        }
+        .question {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .question img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .question a {
+            color: #3B82F6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .illustration {
+            text-align: center;
+        }
+        .illustration img {
+            width: 200px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        .illustration h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .illustration p {
+            font-size: 16px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        @media (max-width: 512px) {
+            .container {
+                flex-direction: column;
+                height: 100vh;
+                overflow-y: auto;
+            }
+            .left-panel, .right-panel {
+                width: 100%;
+                padding: 20px;
+            }
+            .right-panel {
+                display: none;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="left-panel">
+    <div class="logo">
+     <img alt="Pela Design logo" height="40" src="/Skilink logo1.png" width="40"/>
+     <span>
+      Signup 
+     </span>
+    </div>
+    <div class="get-started">
+     Get started
+    </div>
+    <div class="sign-in">
+     Already have an account?
+     <a href="#">
+      Sign in
+     </a>
+    </div>
+    <div class="form-group">
+     <label for="name">
+      Name
+     </label>
+     <input id="name" placeholder="Enter your name" type="text"/>
+     <i class="fa fa-user">
+     </i>
+    </div>
+    <div class="form-group">
+     <label for="email">
+      Email
+     </label>
+     <input id="email" placeholder="Enter your email" type="email"/>
+     <i class="fa fa-envelope">
+     </i>
+    </div>
+    <div class="form-group country">
+     <label for="country">
+      Country
+     </label>
+     <img alt="United States flag" height="20" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-Epn6wSf735iTE4Kwe6R8AKfH.png?st=2024-09-17T15%3A39%3A14Z&amp;se=2024-09-17T17%3A39%3A14Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-16T23%3A12%3A27Z&amp;ske=2024-09-17T23%3A12%3A27Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=m8Km%2Bv1vwf9SpiM6M6FdaaAIf/yritjpy6of1K3wxgE%3D" width="20"/>
+     <select id="country">
+      <option>
+       United States
+      </option>
+     </select>
+    </div>
+    <button class="sign-up-btn">
+     Sign up
+    </button>
+   </div>
+   <div class="right-panel">
+    <div class="question">
+     <span>
+      SL
+     </span>
+     <img alt="Profile picture of Ho3ein" height="40" src="/Skilink logo1.png"  width="40"/>
+    </div>
+    <div class="illustration">
+     <img alt="Illustration of hands reaching out to a globe with 'Pela Design' text" height="260" src="/AlbedoBase_XL_An_intricately_blurred_landscape_painting_featur_3.jpg" width="260"/>
+     <h2>
+      Talents Meets Oppurtunities
+     </h2>
+     <p>
+      Skilink , Freelance Your Way
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
